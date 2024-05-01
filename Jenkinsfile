@@ -60,12 +60,5 @@ pipeline {
                 echo 'Deploying application to production server AWS EC2 or ECS'
             }
         }
-        post {
-          success {
-            mail to: "minhtien2049@gmail.com",
-            subject: "Build status email",
-            body: "The build was successful"
-          }
-        }
     }
 }
